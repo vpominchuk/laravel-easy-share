@@ -1,0 +1,27 @@
+{
+    "name": "vpominchuk/laravel-easy-share",
+    "description": "Laravel EasyShare: Fully customized social share buttons.",
+    "keywords": [
+        "laravel",
+        "laravel share",
+        "laravel social share",
+        "social share buttons"
+    ],
+    "type": "library",
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0|^9.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "VPominchuk\\EasyShare\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vasyl Pominchuk",
+            "email": "vpominchuk@gmail.com"
+        }
+    ]
+}
