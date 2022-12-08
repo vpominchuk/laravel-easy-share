@@ -39,7 +39,7 @@ class EasyShareComponent extends Component
                 $easyShare->disable($disabled);
             }
 
-            $services = $easyShare->getServices($attributes);
+            $services = $easyShare->getServices();
 
             $params = ['services' => $services];
 
