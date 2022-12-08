@@ -7,7 +7,7 @@ namespace VPominchuk\EasyShare;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 
-class EasyShare
+class EasyShareService
 {
     private string $url = '';
     private string $title = '';
@@ -37,34 +37,38 @@ class EasyShare
         return config('easy-share.links');
     }
 
-    public function setUrl(string $url): EasyShare
+    public function setUrl(string $url): EasyShareService
     {
         $this->url = $url;
 
         return $this;
     }
 
-    public function setTitle(string $title): EasyShare
+    public function setTitle(string $title): EasyShareService
     {
         $this->title = $title;
 
         return $this;
     }
 
-    public function setSummary(string $summary): EasyShare
+    public function setSummary(string $summary): EasyShareService
     {
         $this->summary = $summary;
 
         return $this;
     }
 
-    public function setAllowed(array $allowed): EasyShare
+    public function setAllowed(array $allowed): EasyShareService
     {
         $this->allowed = $allowed;
         return $this;
     }
 
-    public function disable(string|array $services): EasyShare
+    /**
+     * @param string|array $services
+     * @return $this
+     */
+    public function disable($services): EasyShareService
     {
         if (!is_array($services)) {
             $services = (array)$services;

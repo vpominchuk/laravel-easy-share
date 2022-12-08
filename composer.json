@@ -23,5 +23,15 @@
             "name": "Vasyl Pominchuk",
             "email": "vpominchuk@gmail.com"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VPominchuk\\EasyShare\\Providers\\EasyShareServiceProvider"
+            ],
+            "aliases": {
+                "EasyShare": "VPominchuk\\EasyShare\\Facades\\EasyShare"
+            }
+        }
+    }
 }

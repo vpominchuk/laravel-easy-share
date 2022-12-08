@@ -25,13 +25,6 @@ class EasyShareServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../views', 'easy-share');
     }
 
-    public function register(): void
-    {
-        $this->app->bind('easy.share', function () {
-            return new EasyShare();
-        });
-    }
-
     protected function registerComponent(): void
     {
         Blade::component('easy-share', EasyShareComponent::class);
