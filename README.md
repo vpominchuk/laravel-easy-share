@@ -1,3 +1,5 @@
+![](https://banners.beyondco.de/Laravel%20Easy%20Share.png?theme=light&packageManager=composer+require&packageName=vpominchuk%2Flaravel-easy-share&pattern=texture&style=style_1&description=A+fully+customized+and+easy+to+use+social+share+buttons+component.&md=1&showWatermark=0&fontSize=100px&images=https%3A%2F%2Flaravel.com%2Fimg%2Flogomark.min.svg)
+
 # laravel-easy-share
 Laravel EasyShare is a fully customized and easy to use social share buttons component.
 
@@ -124,7 +126,7 @@ If you discover any security related issues, please use the issue tracker.
 
 ## Credits
 
-- [Vasyl Pominchuk](https://vpominchuk.com/)
+- [Vasyl Pominchuk](https://pominchuk.com/post/7-laravel-social-share-buttons-package)
 
 ## License
 
